@@ -6,7 +6,7 @@ function validateForm(){
  var password   = document.getElementById("input-password").value;
  var email      = document.getElementById("input-email").value;
  var opcion     = document.getElementById("opcion").value;
- 
+
  var name_error = document.getElementById("name_error") ;//.classList.add("tooltip");
  var lastname_error = document.getElementById("lastname_error");//.classList.add("tooltip");
  var email_error = 	document.getElementById("email_error") ;//.classList.add("tooltip");
@@ -38,7 +38,7 @@ function validateForm(){
 	// Validación de apellido
 
    	if (lastname  != "") {
-   		if(!name.match(texto)){
+   		if(!lastname.match(texto)){
    			printClass('lastname_error');
     		showMessage("lastname_error","Solo se aceptan letras ,el 1° Caracter debe estar en Mayúscula");
   		}
